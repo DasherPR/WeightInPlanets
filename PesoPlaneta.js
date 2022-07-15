@@ -13,9 +13,11 @@ function calcularPeso(){
     const peso = inputPeso.value;
     const pesoMarte = CalcularMarte(peso);
     const pesoJupiter = CalcularJupiter(peso);
+    const roundedMarte = Math.round(pesoMarte * 10) / 10;
+    const roundedJupiter = Math.round(pesoJupiter * 10) / 10;
     let resultMars = document.getElementById("mars");
     let resultJupiter = document.getElementById("jupiter");
-    resultMars.innerText = pesoMarte + " Kg";
-    resultJupiter.innerText = pesoJupiter + " Kg";
+    resultMars.innerText = roundedMarte + " Kg";
+    resultJupiter.innerText = roundedJupiter + " Kg";
 
 }
