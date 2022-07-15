@@ -1,3 +1,10 @@
+document.getElementById("weight").onkeypress = function(e) {
+    var key = e.charCode || e.keyCode || 0;     
+    if (key == 13) {
+      e.preventDefault();
+      calcularPeso();
+    }
+}
 function CalcularJupiter(peso){
     const pesoJupiter = (peso/9.81) * 24.8;
     return pesoJupiter;
