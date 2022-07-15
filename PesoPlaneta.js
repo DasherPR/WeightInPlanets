@@ -10,13 +10,14 @@ function CalcularMarte(peso){
 
 function calcularPeso(){
     const inputPeso = document.getElementById("weight");
-    const peso = inputPeso.value;
+    const peso = parseFloat(inputPeso.value);
     if ( peso < 0 ){
         var error = document.getElementById("error");
         error.innerText = "los numeros deben ser positivos";
-    } else {
+    }
+    else {
         var error = document.getElementById("error");
-        error.innerText = ""
+        error.innerText = "";
         const pesoMarte = CalcularMarte(peso);
         const pesoJupiter = CalcularJupiter(peso);
         const roundedMarte = Math.round(pesoMarte * 10) / 10;
