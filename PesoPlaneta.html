@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./pesoplaneta.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+            <img src="https://icons-for-free.com/download-icon-globe-131964752856529752_512.png" alt="icono de planeta">
+            <h1> Tu peso en otro planeta </h1>
+            <h2> ¿Quieres saberlo? </h2>
+            </div>
+            <form>
+                <label for="weight">Ingresa tu peso</label>
+                <input class="weight" type="number" id="weight">
+                <button type="button" onclick="calcularPeso()">Calcular</button>
+            </form>
+            <div class="answer">
+                <h2> Tu peso es: </h2>
+                <h3> En Marte: </h3>
+                <p id ="mars"></p>
+                <h3> En Jupiter: </h3>
+                <p id = "jupiter"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./PesoPlaneta.js"></script>
+</body>
+</html>
